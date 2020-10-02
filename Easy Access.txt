@@ -13,3 +13,41 @@ all you need to do is to check the section you need and note the Line Number.
 **************************************************
 
         SECTION                                        LINE NUMBER
+
+        Container                                       16 - 27
+        Grid                                            28 - 49
+        Typography                                      50 - 86
+        Colors                                          87 - 106
+        Table                                           107 - 190
+        Images                                          197 - 227
+        Jombotron                                       228 - 238
+        Alerts                                          239 - 273
+        Button                                          274 - 356
+        Badges                                          357 - 379
+        Progress Bars                                   380 - 431
+        Spinners                                        432 - 476
+        Pagination - Breadcrumb                         477 - 509
+        List Group                                      510 - 569
+        Cards                                           570 - 717
+        Drop Down                                       718 - 769
+        Collapsible                                     770 - 829
+        Navigation - NavBars                            830 - 978
+        Forms                                           979 - 1045
+        Input                                           1046 - 1182
+        Custom Forms                                    1183 - 1251
+        Carousels                                       1252 - 1311
+        Modals                                          1312 - 1350
+        Tool Tip                                        1351 - 1364
+        Pop Over                                        1365 - 1392
+        Toast                                           1393 - 1424
+        Utilities                                       1430 - 1533
+        Flex Utilities                                  1534 - 1572
+        Media Object                                    1573 - 1601
+
+**************************************************
+**************************************************
+Some Bootstrap classes needs Jquery to work
+Any Class that needs Jquery it will be told in the description
+You can find the script tags at the bottom of the page
+**************************************************
+**************************************************

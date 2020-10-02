@@ -9,3 +9,8 @@ reference when they get stuck while using the framework.
 Feel free to clone the repo and veiw the files anytime you like.
 
 > For both those who are new to **Bootstrap** and those that already has experience in the framework.
+> Make sure to also read the instructions in the Easy Access.text file.
+
+## Easy Access.txt file
+The Easy Access.txt contains information for easy access to the cheat sheet 
+e.g: like different sections and where there line starts and ends.

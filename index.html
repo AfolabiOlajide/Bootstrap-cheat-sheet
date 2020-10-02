@@ -27,6 +27,7 @@
     </div>
     <!-- grid -->
     <!-- 
+        make sure each .col class you used is wrapped in a .row class
         .col- (extra small devices - screen width less than 576px)
         .col-sm- (small devices - screen width equal to or greater than 576px)
         .col-md- (medium devices - screen width equal to or greater than 768px)
@@ -1641,31 +1642,5 @@
       $('.toast').toast('show');
     });
 </script> <!--ENDs HERE-->
-
-<!--
-    use this script below in the case of which you used the class .needs-validation for a form
-    and you want to also add the class of .was-validated on submit of the form when due input or
-    checks have not been completed
--->
-<!-- <script>
-    // Disable form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Get the forms we want to add validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-    </script> -->
 </body>
 </html>
