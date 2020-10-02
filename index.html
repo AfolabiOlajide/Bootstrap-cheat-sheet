@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap cheat sheet</title>
+    <!-- Link for offline use of bootstrap -->
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- container -->
+    <div class="container bg-dark text-white p-3 my-3">
+        <h1>Bootstrap Cheet sheet</h1>
+        <p>container class use</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore delectus laudantium commodi, totam ipsam doloremque non odit. Consectetur, explicabo minima.</p>
+    </div>
+    <!-- container-fluid -->
+    <div class="container-fluid bg-primary text-white p-3 my-3">
+        <h1>Bootstrap Cheet sheet</h1>
+        <p>container-fluid class use</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore delectus laudantium commodi, totam ipsam doloremque non odit. Consectetur, explicabo minima.</p>
+    </div>
+    <!-- grid -->
+    <!-- 
+        .col- (extra small devices - screen width less than 576px)
+        .col-sm- (small devices - screen width equal to or greater than 576px)
+        .col-md- (medium devices - screen width equal to or greater than 768px)
+        .col-lg- (large devices - screen width equal to or greater than 992px)
+        .col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+     -->
+    <div class="container-fluid border">
+        <div class="row py-3">
+            <div class="col-md-4 col-sm-8"><h3>Grid System</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique praesentium sunt odio quod blanditiis sed? Magnam ex similique autem. Odio.</p>
+            </div>
+            <div class="col-md-4 col-sm-4"><h3>Grid System</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique praesentium sunt odio quod blanditiis sed? Magnam ex similique autem. Odio.</p>
+            </div>
+            <div class="col-md-4 col-sm-12"><h3>Grid System</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique praesentium sunt odio quod blanditiis sed? Magnam ex similique autem. Odio.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Typography-->
+    <!-- 
+        .display-1, .display-2, .display-3, .display-4
+     -->
+    <div class="container py-3 bg-dark text-white my-3">
+        <h1 class="display-3 text-center">Typography <small>secondary text</small></h1>
+        <p><abbr title="lorem is a dummy text generator">lorem</abbr> ipsum dolor sit amet <mark>consectetur</mark> adipisicing elit. Facilis, architecto.</p>
+
+        <blockquote class="blockquote">
+            <h1 class="display-4 text-right">Blockquote</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur soluta enim sapiente fuga earum, aliquid eos necessitatibus voluptatem deleniti reiciendis!
+            <footer class="blockquote-footer">Afolabi Olajide (founder Tekolaj)</footer>
+        </blockquote>
+        <div>
+            <h1 class="display-4">Description List</h1>
+            <dt>
+                <dt>Title 1</dt>
+                <dd>-- list 1</dd>
+                <dd>-- list 2</dd>
+                <dt>Title 2</dt>
+                <dd>-- list 1</dd>
+                <dd>-- list 2</dd>
+            </dt>
+            <h1 class="display-4 text-center">Code and keyboard</h1>
+            <p>Code tag helps to format our code snipet example: you can add typography to <code>h1</code>,<code>h2</code></p>
+            <p><kbd>ctrl + s</kbd> is a keyboard shortcut to save a file or document in your drive</p>
+            <h1 class="display-4">the pre tag</h1>
+            <pre class="text-white">
+                Text in a pre element
+                is displayed in a fixed-width
+                font, and it preserves
+                both      spaces and
+                line breaks.
+            </pre>
+            <p><code>.text-decoration-none</code><a href="#" class="text-decoration-none"> removes underline in a link tag</a></p>
+        </div>
+    </div>
+    <!-- colors -->
+    <!-- 
+        The classes for text colors are: .text-muted, .text-primary, .text-success, .text-info, 
+        .text-warning, .text-danger, .text-secondary, .text-white, .text-dark, .text-body (default body color/often black) and .text-light:
+     -->
+     <!-- 
+         You can also add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes
+      -->
+      <!-- 
+        The classes for background colors are: .bg-primary, .bg-success, .bg-info, .bg-warning, 
+        .bg-danger, .bg-secondary, .bg-dark and bg-light
+       -->
+    <div class="container py-3 border">
+        <ul>
+            <li class="text-muted">muted text</li>
+            <li class="text-primary">primary text</li>
+            <li class="text-success">success text</li>
+        </ul>
+        <a href="" class="text-decoration-none text-primary">primary link text which turns darker on hover applies to other colors</a>
+    </div>
+    <!-- Table -->
+    <!-- 
+        helpful classes 
+        .table, .table-striped, .table-bordered, .table-hover, .table-dark, .table-borderless
+     -->
+     <!-- 
+        contextual classes
+
+        .table-primary	        Blue: Indicates an important action
+        .table-success	        Green: Indicates a successful or positive action
+        .table-danger	        Red: Indicates a dangerous or potentially negative action
+        .table-info	            Light blue: Indicates a neutral informative change or action
+        .table-warning	        Orange: Indicates a warning that might need attention
+        .table-active	        Grey: Applies the hover color to the table row or table cell
+        .table-secondary	    Grey: Indicates a slightly less important action
+        .table-light	        Light grey table or table row background
+        .table-dark	            Dark grey table or table row background
+      -->
+      <!-- 
+        The .thead-dark class adds a black background to table headers, and the .thead-light class adds a grey background to table headers
+        The .table-sm class makes the table smaller by cutting cell padding in half
+        The .table-responsive class adds a scrollbar to the table when needed (when it is too big horizontally)
+
+                Class	                Screen width
+        .table-responsive-sm	        < 576px
+        .table-responsive-md	        < 768px
+        .table-responsive-lg	        < 992px
+        .table-responsive-xl	        < 1200px
+       -->
+    <div class="container-fluid my-3">
+        <h3 class="display-4 text-center">Tables</h3>
+        <table class="table table-striped table-hover table-dark">
+            <tr >
+                <th>S/N</th>
+                <th>Name</th>
+                <th>Country</th>
+                <th>G-Code</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Andre</td>
+                <td>South Africa</td>
+                <td>2637</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>John</td>
+                <td>Nigeria</td>
+                <td>77288</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rum</td>
+                <td>Canada</td>
+                <td>00933</td>
+            </tr>
+        </table>
+        <table class="table table-striped">
+            <tr class="table-danger">
+                <th>S/N</th>
+                <th>Name</th>
+                <th>Country</th>
+                <th>G-Code</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Andre</td>
+                <td>South Africa</td>
+                <td>2637</td>
+            </tr>
+            <tr class="table-info">
+                <td>2</td>
+                <td>John</td>
+                <td>Nigeria</td>
+                <td>77288</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rum</td>
+                <td>Canada</td>
+                <td>00933</td>
+            </tr>
+        </table>
+    </div>
+
+<!-- 
+    so as not to populate or make this file large i will not be using images but placeholder images 
+    you can get them from https://placeholder.com/
+ -->
+
+    <!-- Images -->
+    <!-- 
+        The .rounded-circle class shapes the image to a circle
+        The .img-thumbnail class shapes the image to a thumbnail (bordered)
+        The .rounded class adds rounded corners to an image
+     -->
+     <!-- 
+         Float an image to the right with the .float-right class or to the left with .float-left
+         Center an image by adding the utility classes .mx-auto (margin:auto) and .d-block (display:block) to the image
+
+         Responsive Images
+        Images come in all sizes. So do screens. Responsive images automatically adjust to fit the size of the screen.
+        Create responsive images by adding an .img-fluid class to the <img> tag. The image will then scale nicely to the parent element.
+      -->
+    <div class="container">
+        <h3 class="display-4 text-center">Images</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 class="text-center">Circle</h3>
+                <img class="rounded-circle mx-auto d-block img-fluid" src=" https://via.placeholder.com/150" alt="placeholder">
+            </div>
+            <div class="col-sm-4">
+                <h3 class="text-center">Thumbnail</h3>
+                <img class="img-thumbnail mx-auto d-block img-fluid" src=" https://via.placeholder.com/150" alt="placeholder">
+            </div>
+            <div class="col-sm-4">
+                <h3 class="text-center">Rounded corners</h3>
+                <img class="rounded mx-auto d-block img-fluid" src=" https://via.placeholder.com/150" alt="placeholder">
+            </div>
+        </div>
+    </div>
+    <!-- Jumbotron -->
+    <!-- 
+        If you want a full-width jumbotron without rounded borders, add the .jumbotron-fluid class and a 
+        .container or .container-fluid inside of it
+     -->
+    <div class="jumbotron jumbotron-fluid my-3">
+        <div class="container">
+            <h1 class="display-2">Jumbotron</h1>
+            <p>Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.</p>
+        </div>
+    </div>
+    <!-- Alerts -->
+    <!-- 
+        Alerts are created with the .alert class, followed by one of the contextual classes 
+        .alert-success, .alert-info, .alert-warning, .alert-danger, .alert-primary, .alert-secondary, .alert-light or .alert-dark
+
+        Add the alert-link class to any links inside the alert box to create "matching colored links"
+
+        To close the alert message, add a .alert-dismissible class to the alert container. 
+        Then add class="close" and data-dismiss="alert" to a link or a button element
+
+        Tip: &times; (×) is an HTML entity that is the preferred icon for close buttons, rather than the letter "x".
+        for a list of all HTML entities visit w3schools whit this link https://www.w3schools.com/charsets/ref_html_entities_4.asp
+
+        Animated Alerts
+        The .fade and .show classes adds a fading effect when closing the alert message:
+     -->
+     <div class="container">
+         <h3 class="display-4 text-center">Alerts</h3>
+        <div class="alert alert-success">
+            <strong>Success!</strong> Operation was successful
+        </div>
+        <div class="alert alert-info">
+            <strong>info!</strong> You should <a href="#" class="alert-link">read this message</a>.
+        </div>
+        <!-- when you click on this the alert box will disappear -->
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            Click on the x to dismiss this alert box
+        </div>
+        <!-- Fades out -->
+        <div class="alert alert-success alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            Click on the x to dismiss this alert box notice the fade out
+        </div>
+     </div>
+     <!-- Button -->
+     <!-- 
+        The button classes can be used on <a>, <button>, or <input> elements
+        Bootstrap 4 provides eight outline/bordered buttons for the contextual classes
+        for button sizes: Use the .btn-lg class for large buttons or .btn-sm class for small buttons
+        Block level buttons: Add class .btn-block to create a block level button that spans the entire width of the parent element
+
+        A button can be set to an active (appear pressed) or a disabled (unclickable) state:
+        The class .active makes a button appear pressed, and the (disabled attribute) makes a button unclickable. 
+        Note that <a> elements do not support the disabled attribute and must therefore use the 
+        .disabled class to make it visually appear disabled.
+        
+        You can also add "spinners" to a button, which you will learn more about in the spinners section
+      -->
+      <!-- 
+        Button group
+        Use a <div> element with class .btn-group to create a button group
+        with each button or whatever tag used having a class of btn as usual
+
+        Instead of applying button sizes to every button in a group, use class .btn-group-lg for 
+        a large button group or the .btn-group-sm for a small button group
+
+        There is support for vertical Button group
+        Use the class .btn-group-vertical to create a vertical button group:
+       -->
+    <div class="container">
+        <h3 class="display-3 text-center">Button</h3>
+        <button type="button" class="btn">Basic</button>
+        <button type="button" class="btn btn-primary btn-lg">Primary</button> <!-- .btn-lg class added -->
+        <button type="button" class="btn btn-secondary " disabled>Disabled Button</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <a href="" class="btn btn-danger">Danger Button</a>
+        <input type="button" value="submit" class="btn btn-info">
+        <button type="button" class="btn btn-outline-primary">
+            <span class="spinner-border spinner-border-sm"></span> Primary
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button><!-- .btn-sm class added -->
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-success btn-block my-3">Block Level Button</button>
+        <!-- btn group -->
+        <div class="btn-group-vertical">
+            <button class="btn btn-info">Button 1</button>
+            <button class="btn btn-danger">Button 2</button>
+            <button class="btn btn-success">Button 3</button>
+        </div>
+        <div class="btn-group btn-group-lg">
+            <button class="btn btn-info">Button 1</button>
+            <button class="btn btn-info">Button 2</button>
+            <button class="btn btn-info">Button 3</button>
+        </div>
+        <!-- 
+        Nesting Button Groups & Dropdown Menus
+        Nest button groups to create dropdown menus (you will learn more about dropdowns later):
+         -->
+         <div class="btn-group">
+             <button type="button" class="btn btn-primary">Good</button>
+             <button type="button" class="btn btn-primary">Bad</button>
+             <div class="btn-group">
+                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                     List
+                </button>
+                 <div class="dropdown-menu">
+                     <a href="#" class="dropdown-item">list 1</a>
+                     <a href="#" class="dropdown-item">list 2</a>
+                 </div>
+             </div>
+         </div>
+         <!-- split button -->
+         <!-- 
+            you can create a lone dropdown button 
+          -->
+         <div class="btn-group">
+             <div class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+               <span class="caret"></span>
+             </div>
+             <div class="dropdown-menu">
+                 <a href="#" class="dropdown-item">item 1</a>
+                 <a href="#" class="dropdown-item">item 1</a>
+                 <a href="#" class="dropdown-item">item 1</a>
+             </div>
+         </div>
+    </div>
+    <!-- Badges -->
+    <!-- 
+        Badges are used to add additional information to any content. 
+        Use the .badge class together with a contextual class (like .badge-secondary) 
+        within <span> elements to create rectangular badges. 
+        Note that badges scale to match the size of the parent element (if any)
+
+        Use the .badge-pill class to make the badges more round
+        Badges can put inside a button
+     -->
+    <div class="container my-3">
+        <h3 class="display-4 text-center">Badges</h3>
+        <h2>This a <span class="badge badge-secondary">badge</span></h2>
+        <p>
+            We can use badges with contextual classes 
+            <span class="badge badge-primary">primary</span>
+            <span class="badge badge-info">info</span>
+            <span class="badge badge-danger badge-pill">danger</span>
+        </p>
+        <button class="btn btn-warning">
+            Mail <span class="badge badge-danger">5</span>
+        </button>
+    </div>
+    <!-- Progress Bars -->
+    <!-- 
+        progress bars are use to show how far long a user in in process
+
+        To create a default progress bar, add a .progress class to a container element and add the 
+        .progress-bar class to its child element. Use the CSS width property to set the width of the progress bar
+
+        Add text inside the progress bar to show the visible percentage:
+
+        Height:
+        The height of the progress bar is 16px by default. Use the CSS height property to change it. 
+        Note that you must set the same height for the progress container and the progress bar
+
+        By default, the progress bar is blue (primary). Use any of the Bootstrap 4 contextual background classes to its color
+
+        you can add a border to to the parent element of the progress bar
+
+        Striped Progress Bars:
+        Use the .progress-bar-striped class to add stripes to the progress bars
+        
+        Animated Progress Bars:
+        Add the .progress-bar-animated class to animate the progress bar
+     -->
+    <div class="container">
+        <div class="progress">
+            <!-- striped class and animated class added-->
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;">50%</div> 
+        </div>
+        <h5 class="text-center text-primary">Added Height</h5>
+        <div class="progress my-3" style="height: 20px;">
+            <div class="progress-bar bg-dark text-white" style="width: 20%;height: 20px;">20%</div>
+        </div>
+        <h5 class="text-center text-primary">Bordered</h5>
+        <div class="progress border">
+            <div class="progress-bar bg-light text-dark" style="width:80%">80%</div>
+        </div>
+        <!-- 
+            Progress bars can also be stacked
+         -->
+        <h5 class="text-center text-primary">Stacked Progress Bars</h5>
+         <div class="progress my-3">
+            <div class="progress-bar bg-success" style="width:40%">
+              Success
+            </div>
+            <div class="progress-bar bg-warning" style="width:10%">
+              Warning
+            </div>
+            <div class="progress-bar bg-danger" style="width:20%">
+              Danger
+            </div>
+        </div>
+    </div>
+    <!-- Spinners -->
+    <!-- 
+        To create a spinner/loader, use the .spinner-border class
+
+        Colored Spinners
+        Use any text color utilites to add a color to the spinner 
+        NOTE: text color utilities
+     -->
+    <div class="container">
+        <h1 class="display-4 text-center">Spinners</h1>
+        <div class="spinner-border"></div>
+        <div class="spinner-border spinner-border-sm text-secondary"></div>
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-border spinner-border-sm  text-danger"></div>
+        <div class="spinner-border text-light"></div>
+        <div class="spinner-border text-warning"></div>
+        <!-- 
+            Growing Spinners
+            Use the .spinner-grow class if you want the spinner/loader to grow instead of "spin":
+         -->
+        <div class="spinner-grow text-muted"></div>
+        <div class="spinner-grow text-primary"></div>
+        <div class="spinner-grow text-success"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-grow text-warning"></div>
+        <!-- 
+            Spinner Size
+            Use .spinner-border-sm or .spinner-grow-sm to create a smaller spinner:
+         -->
+        <div class="spinner-grow spinner-grow-sm text-danger"></div>
+        <div class="spinner-grow spinner-grow-sm text-secondary"></div>
+        <div class="spinner-grow spinner-grow-sm text-dark"></div>
+        <div class="spinner-grow spinner-grow-sm text-light"></div>
+        <!-- 
+            Spinner Buttons
+            You can also add spinners to a button, with or without text:
+            as you have seen in previously
+         -->
+         <button class="btn btn-warning">
+             <span class="spinner-border spinner-border-sm"></span>
+         </button>
+         <button class="btn btn-danger" disabled>  <!-- Disabled attribute added-->
+            <span class="spinner-grow spinner-grow-sm"></span> Bootstrap Loading
+        </button>
+    </div>
+    <!-- Pagination -->
+    <!-- 
+        If you have a web site with lots of pages, you may wish to add some sort of pagination to each page.
+
+        To create a basic pagination, add the .pagination class to an <ul> element. 
+        Then add the .page-item to each <li> element and a .page-link class to each link inside <li>
+
+        Active State:       The .active class is used to "highlight" the current page
+        Disabled State:     The .disabled class is used for un-clickable links:
+        Pagination Sizing:  Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks
+
+        Use utility classes to change the alignment of the pagination: .justify-content-center, justify-content-end
+     -->
+    <div class="container my-3">
+        <h3 class="display-4 text-center">Pagination</h3>
+        <ul class="pagination pagination-lg justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <!-- 
+            Breadcrumbs:    Another form for pagination, is breadcrumbs
+            The .breadcrumb and .breadcrumb-item classes indicates the current page's location within a navigational hierarchy:
+         -->
+         <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Articles</a></li>
+            <li class="breadcrumb-item"><a href="#">Photo gallery</a></li>
+            <li class="breadcrumb-item active">News</li>
+          </ul>
+    </div>
+    <!-- list Group -->
+    <!-- 
+        To create a basic list group, use an <ul> element with class .list-group,
+        and <li> elements with class .list-group-item
+        Use the .active class to highlight the current item
+
+        Use the .list-group-flush class to remove some borders and rounded corners
+
+        Contextual classes can be used to color list items
+        The classes for coloring list-items are: .list-group-item-success, list-group-item-secondary, 
+        list-group-item-info, list-group-item-warning, .list-group-item-danger, .list-group-item-primary, 
+        list-group-item-dark and list-group-item-light,
+     -->
+    <div class="container">
+        <h3 class="display-4 text-center">List Group</h3>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success">First item</li>
+            <li class="list-group-item list-group-item-danger">Second item</li>
+            <li class="list-group-item list-group-item-info">Third item</li>
+        </ul>
+        <!-- 
+            To create a list group with linked items, use <div> instead of <ul> and <a> instead of <li>. 
+            Optionally, add the .list-group-item-action class if you want a grey background color on hover
+
+            The .disabled class adds a lighter text color to the disabled item. And when used on links, it will remove the hover effect
+            If you want the list items to display horizontally instead of vertically 
+            (side by side instead of on top of each other), add the .list-group-horizontal class to .list-group:
+         -->
+        <div class="list-group my-3">
+            <a href="#" class="list-group-item list-group-item-action disabled">First item</a>
+            <a href="#" class="list-group-item list-group-item-action">Second item</a>
+            <a href="#" class="list-group-item list-group-item-action">Third item</a>
+        </div>
+        <!-- 
+            Flushed :   Use the .list-group-flush class to remove some borders and rounded corners:
+        -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+        </ul>
+        <!-- 
+            List Group with Badges
+            Combine .badge classes with utility/helper classes to add badges inside the list group:
+         -->
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Inbox
+                <span class="badge badge-primary badge-pill">50</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Spam
+                <span class="badge badge-primary badge-pill">99</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Archived
+                <span class="badge badge-primary badge-pill">5</span>
+            </li>
+        </ul>
+    </div>
+    <!-- Cards -->
+    <!-- 
+        A card in Bootstrap 4 is a bordered box with some padding around its content. 
+        It includes options for headers, footers, content, colors, etc.
+
+        A basic card is created with the .card class, and content inside the card has a .card-body class
+        The .card-header class adds a heading to the card and the .card-footer class adds a footer to the card
+
+        To add a background color the card, use contextual classes 
+        (.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.)
+
+        Use .card-title to add card titles to any heading element. 
+        The .card-text class is used to remove bottom margins for a <p> element if it is the last child (or the only one) inside
+        .card-body. The .card-link class adds a blue color to any link, and a hover effect.
+     -->
+    <div class="container-fluid">
+        <h3 class="display-4 text-center">Card</h3>
+        <div class="container">
+            <div class="card">
+                <div class="card-header bg-dark text-white">Card Header</div>
+                <div class="card-body">
+                    <h3 class="card-title">Hello World</h3>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum cupiditate unde autem.
+                        <a href="#" class="card-link">Link</a>
+                    </p>
+                </div>
+                <div class="card-footer bg-dark text-white">Card Footer</div>
+            </div>
+        </div>
+        <!-- 
+            Add .card-img-top or .card-img-bottom to an <img> to place the image at the top or at the 
+            bottom inside the card. Note that we have to add the image outside of the .card-body to span the entire width
+         -->
+        <div class="row my-3">
+            <div class="col-md-4 my-3">
+                <div class="card" style="width: 350px">
+                    <img src="https://via.placeholder.com/350" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Image at the top</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="card" style="width: 350px">
+                    <div class="card-body">
+                        <h3 class="card-title">Image at the bottom</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <img src="https://via.placeholder.com/350" alt="" class="card-img-bottom">
+                </div>
+            </div>
+            <!-- 
+                Add the .stretched-link class to a link inside the card, and it will make the whole card clickable 
+                and hoverable (the card will act as a link):
+             -->
+            <div class="col-md-4 my-3">
+                <div class="card" style="width: 350px">
+                    <div class="card-body">
+                        <h3 class="card-title">Stretched Link</h3>
+                        <p class="card-text">
+                            Adding the <code>.stretched-link</code> class to a link inside the card
+                            will make the whole card clickable 
+                            <a href="#" class="btn btn-primary stretched-link">See More</a href="#">
+                        </p>
+                    </div>
+                    <img src="https://via.placeholder.com/350" alt="" class="card-img-bottom">
+                </div>
+            </div>
+        </div>
+        <!-- Turn an image into a card background and use .card-img-overlay to add text on top of the image: -->
+        <div class="card" style="width: 350px;">
+            <img src="https://via.placeholder.com/350" alt="" class="card-img-top">
+            <div class="card-img-overlay">
+                <div class="card-title">Card Image Overlay</div>
+                <div class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, porro?
+                </div>
+            </div>
+        </div>
+        <!-- 
+            The .card-columns class creates a masonry-like grid of cards (like pinterest). 
+            The layout will automatically adjust as you insert more cards.
+            Note: The cards are displayed vertically on small screens (less than 576px):
+         -->
+         <div class="container my-3 text-white">
+            <div class="card-columns">
+                <div class="card bg-primary">
+                  <div class="card-body text-center">
+                    <p class="card-text">Some text inside the first card</p>
+                  </div>
+                </div>
+                <div class="card bg-info">
+                    <div class="card-body text-center">
+                      <p class="card-text">Some text inside the first card</p>
+                    </div>
+                  </div>
+                  <div class="card bg-light text-dark">
+                    <div class="card-body text-center">
+                      <p class="card-text">Some text inside the first card</p>
+                    </div>
+                  </div>
+                  <div class="card bg-warning">
+                    <div class="card-body text-center">
+                      <p class="card-text">Some text inside the first card</p>
+                    </div>
+                  </div>
+            </div>
+            <!-- 
+                The .card-deck class creates a grid of cards that are of equal height and width. 
+                The layout will automatically adjust as you insert more cards.
+                Note: The cards are displayed vertically on small screens (less than 576px)
+
+                The .card-group class is similar to .card-deck. The only difference is that the .card-group 
+                class removes left and right margins between each card.
+                Note: The cards are displayed vertically on small screens (less than 576px), WITH top and bottom margin
+             -->
+            <div class="card-deck">
+                <div class="card bg-secondary">
+                    <div class="card-body text-center">
+                      <p class="card-text">Some text inside the first card</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Numquam voluptates at asperiores ullam nulla incidunt ratione sunt voluptas dignissimos quod?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, consequatur.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card bg-danger">
+                    <div class="card-body text-center">
+                      <p class="card-text">Some text inside the first card</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Numquam voluptates at asperiores ullam nulla incidunt ratione sunt voluptas dignissimos quod?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card bg-primary">
+                    <div class="card-body text-center">
+                      <p class="card-text">Some text inside the first card</p>
+                    </div>
+                  </div>
+            </div>
+         </div>
+    </div>
+    <!-- Drop Down -->
+    <!-- 
+        How it works
+        The .dropdown class indicates a dropdown menu.
+        To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and the data-toggle="dropdown" attribute.
+        Add the .dropdown-menu class to a <div> element to actually build the dropdown menu. 
+        Then add the .dropdown-item class to each element (links or buttons) inside the dropdown menu.
+
+        The .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal border
+        The .dropdown-header class is used to add headers inside the dropdown menu
+        Highlight a specific dropdown item with the .active class (adds a blue background color).
+        To disable an item in the dropdown menu, use the .disabled class 
+        (gets a light-grey text color and a "no-parking-sign" icon on hover
+
+        You can also create a "dropright" or "dropleft" menu, by adding the .dropright or 
+        .dropleft class to the dropdown element. Note that the caret/arrow is added automatically
+
+        If you want the dropdown menu to expand upwards instead of downwards,
+        change the <div> element with class="dropdown" to "dropup"
+        
+        The .dropdown-item-text class is used to add plain text to a dropdown item, or used on links for default link styling.
+        If you want a group button with one of the button as a dropdown menu the one that has the drop dwon menu
+        put it in a <div> with a class of .btn-group as seen in the button section then all other classes can now 
+        be specified as taught
+
+        A dropdown can be added to a vertical button group
+     -->
+    <div class="container">
+        <h3 class="display-4 text-center">Drop Down</h3>
+        <div class="dropdown dropright">
+            <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">More</button>
+            <div class="dropdown-menu">
+                <div class="dropdown-header">first header</div><!-- header used-->
+                <a href="#" class="dropdown-item">item 1</a>
+                <a href="#" class="dropdown-item">item 2</a>
+                <a href="#" class="dropdown-item">item 3</a>
+                <div class="dropdown-divider"></div><!-- divider used-->
+                <div class="dropdown-header">first header</div><!-- header used-->
+                <a href="#" class="dropdown-item">item 4</a>
+            </div>
+        </div>
+        <!-- Split button dropdown -->
+        <div class="btn-group my-3">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"></button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">item 1</a>
+                <a href="#" class="dropdown-item">item 2</a>
+                <a href="#" class="dropdown-item">item 3</a>
+            </div>
+        </div>
+    </div>
+    <!-- Collapsible -->
+    <!--
+        Collapsibles are useful when you want to hide and show large amount of content
+
+        The .collapse class indicates a collapsible element (a <div> in this example); this is the content 
+        that will be shown or hidden with a click of a button.
+        To control (show/hide) the collapsible content, add the data-toggle="collapse" attribute to an <a> or a <button> element. 
+        Then add the data-target="#id" attribute to connect the button with the collapsible content (<div id="demo">).
+
+        Note: For <a> elements, you can use the href attribute instead of the data-target attribute
+        By default, the collapsible content is hidden. However, you can add the .show class to show the content by default
+    -->
+    <div class="container">
+        <h3 class="display-4 text-center">Collapsible</h3>
+        <button class="btn btn-info" data-toggle="collapse" data-target="#demo">Click to show and hide</button>
+        <div id="demo" class="collapse show card my-3">
+            <div class="card-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga enim error illum sed debitis perferendis vero iste eos necessitatibus beatae.......
+            </div>
+        </div>
+        <!-- 
+            Note: Use the data-parent attribute to make sure that all collapsible elements under the 
+            specified parent will be closed when one of the collapsible item is shown.
+         -->
+        <h5 class="text-primary text-center">Accordion</h5>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#item1" class="card-link stretched-link" data-toggle="collapse">Happy</a>
+                </div>
+                <div class="collapse show" id="item1" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, laudantium.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a href="#item2" class="card-link stretched-link" data-toggle="collapse">Bootstrap 4</a>
+                </div>
+                <div class="collapse" id="item2" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, laudantium.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a href="#item3" class="card-link stretched-link" data-toggle="collapse">Long</a>
+                </div>
+                <div class="collapse" id="item3" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, laudantium.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <!-- 
+        If you want to create a simple horizontal menu, add the .nav class to a <ul> element, followed by 
+        .nav-item for each <li> and add the .nav-link class to their links
+        
+        Add the .justify-content-center class to center the nav, and the .justify-content-end class to right-align the nav.
+        Add the .flex-column class to the <div> with class .nav to create a vertical nav
+
+        Turn the nav menu into navigation tabs with the .nav-tabs class. Add the .active class to the active/current link.
+        Turn the nav menu into navigation pills with the .nav-pills class.
+
+        To make the tabs toggleable, add the data-toggle="tab" attribute to each link. 
+        Then add a .tab-pane class with a unique ID for every tab and wrap them inside a <div> element with class .tab-content.
+
+        If you want the tabs to fade in and out when clicking on them, add the .fade class to .tab-pane
+        The same code applies to pills; only change the data-toggle attribute to data-toggle="pill"
+     -->
+    <div class="container-fluid">
+        <h3 class="display-4 text-center">Navigation</h3>
+        <div class="container my-3">
+            <!-- Justify the tabs/pills with the .nav-justified class (equal width) -->
+            <ul class="nav justify-content-center nav-tabs nav-justified">
+                <li class="nav-item"><a href="#home" class="nav-link active" data-toggle="tab">Home</a></li>
+                <li class="nav-item "><a href="#about" class="nav-link" data-toggle="tab">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-toggle="tab">Contact</a></li>
+                <li class="nav-item">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">More Info</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">item 1</a>
+                        <a href="#" class="dropdown-item">item 2</a>
+                        <a href="#" class="dropdown-item">item 3</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane container active my-3" id="home">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit possimus itaque vel? Sit ducimus ullam quasi illum deserunt! Sint, suscipit!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Impedit possimus itaque vel? Sit ducimus ullam quasi illum deserunt! Sint, suscipit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit possimus itaque vel? Sit ducimus ullam quasi illum deserunt! Sint, suscipit!
+                </div>
+                <div class="tab-pane fade container my-3" id="about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit possimus itaque vel? Sit ducimus ullam quasi illum deserunt! Sint, suscipit!
+                </div>
+                <div class="tab-pane fade container my-3" id="contact">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur assumenda, sint illo nostrum aliquam corporis in voluptatum impedit quasi veniam quisquam vitae exercitationem ut 
+                    deserunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit possimus itaque vel? Sit ducimus ullam quasi illum deserunt! Sint, suscipit!Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit possimus itaque vel? Sit ducimus ullam quasi illum deserunt! Sint, suscipit!Lorem ipsum dolor 
+                    sit amet consectetur adipisicing elit. Impedit possimus itaque vel? Sit ducimus ullam quasi illum deserunt! Sint, suscipit!
+                </div>
+            </div>
+        </div>
+        <h3 class="text-center text-primary">NavBar</h3>
+        <p class="container">
+            Normaly Navbars are placed at the top, but for education purposes and for step by step learning process nav bars will be
+            treated here but on your website it is recommended that your nav bar is at the top of the page
+        </p>
+        <!-- Nav Bar -->
+        <!-- 
+            With Bootstrap, a navigation bar can extend or collapse, depending on the screen size.
+
+            A standard navigation bar is created with the .navbar class, followed by a responsive collapsing class: 
+            .navbar-expand-xl|lg|md|sm (stacks the navbar vertically on extra large, large, medium or small screens).
+
+            To add links inside the navbar, use a <ul> element with class="navbar-nav". 
+                Then add <li> elements with a .nav-item class followed by an <a> element with a .nav-link class
+
+            Remove the .navbar-expand-xl|lg|md|sm class to create a vertical navigation bar
+         -->
+         <!-- 
+             Add the .justify-content-center class to center the navigation bar.
+
+            Using .justify-content-center will center the navigation bar on medium, large and extra large screens.
+            On small screens it will be displayed vertically and left-aligned (because of the .navbar-expand-sm class)
+          -->
+        <!-- 
+            Use any of the .bg-color classes to change the background color of the navbar 
+            (.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light)
+
+            Tip: Add a white text color to all links in the navbar with the .navbar-dark class, or use the 
+            .navbar-light class to add a black text color.
+
+            The .navbar-brand class is used to highlight the brand/logo/project name of your page
+            When using the .navbar-brand class on images, Bootstrap 4 will automatically style the image to fit the navbar vertically.
+
+            Use the .navbar-text class to vertical align any elements inside the navbar that are not links 
+            (ensures proper padding and text color).
+        -->
+        <!-- 
+            The navigation bar can also be fixed at the top or at the bottom of the page.
+            A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.
+            The .fixed-top class makes the navigation bar fixed at the top
+            we won't be using the class here but you can experiment later but make sure the class 
+            .fixed-top or .fixed-bottom should be in the same class declearation as .navbar
+        -->
+        <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
+            <ul class="navbar-nav">
+                <a href="#" class="navbar-brand text-warning">CHEAT SHEET</a>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Section</a></li>
+            </ul>
+        </nav>
+        <!-- Collapsible nav bar -->
+        <!-- 
+            To create a collapsible navigation bar, use a button with class="navbar-toggler", data-toggle="collapse" 
+            and data-target="#thetarget". Then wrap the navbar content (links, etc) inside a div element with 
+            class="collapse navbar-collapse", followed by an id that matches the data-target of the button: "thetarget".
+        -->
+        <!-- 
+            Use the .sticky-top class to make the navbar fixed/stay at the top of the page when you scroll past it. 
+            Note: This class does not work in IE11 and earlier (will treat it as position:relative).
+        -->
+        <nav class="navbar navbar-expand-md my-3 bg-dark navbar-dark sticky-top">
+            <a href="#" class="navbar-brand text-danger">CHEAT SHEET</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Link 1</a></li>
+                    <li class="nav-item dropdown" data-toggle="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-white">Link 2</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item ">link</a>
+                            <a href="#" class="dropdown-item ">link</a>
+                            <a href="#" class="dropdown-item ">link</a>
+                            <a href="#" class="dropdown-item ">link</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Link 3</a></li>
+                </ul>
+                <!-- 
+                    Add a <form> element with class="form-inline" to group inputs and buttons side-by-side input should
+                    have a class .form-control the other class is a utility we'll treat later
+
+                    You can also use other input classes, such as .input-group-prepend or .input-group-append to attach an icon or help text next to the input field. we will learn more about these classes in the Inputs section.
+                 -->
+                <form class="form-inline">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Search">
+                    <button class="btn btn-danger" type="submit">Search</button>
+                    <!-- Prepend input group used here -->
+                    <div class="input-group ml-sm-5">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <!-- Forms -->
+        <!-- 
+            Form controls automatically receive some global styling with Bootstrap:
+            All textual <input>, <textarea>, and <select> elements with class .form-control have a width of 100%.
+            Bootstrap provides two types of form layouts:   Stacked (full-width) form, Inline form
+
+            In an inline form, all of the elements are inline and left-aligned.
+            Note: This only applies to forms within viewports that are at least 576px wide. 
+            On screens smaller than 576px, it will stack horizontally.
+            Add class .form-inline to the <form> element
+                Note: that inline forms always looked compressed, you can use bootstrap spacing utilitie 
+                covered in the utilities section
+            You can also use columns (.col) to control the width and alignment of form inputs without using spacing utilities. 
+            Just remember to put them inside a .row container.
+
+            If you want less grid margins (override default column gutters), use .form-row instead of .row:
+        -->
+        <div class="container">
+            <h3 class="display-4 text-center">Forms</h3>
+            <form action="">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password</label>
+                    <input type="password" class="form-control">
+                </div>
+                <div class="form-group form-check">
+                    <label for="" class="form-check-label">
+                        <input type="checkbox" class="form-check-input"> Remember Me
+                    </label>
+                </div>
+                <button class="btn-danger btn" type="submit">Submit</button>
+            </form>
+            <!-- 
+                Form validation
+                You can use different validation classes to provide valuable feedback to users. Add either .was-validated 
+                or .needs-validation to the <form> element, depending on whether you want to provide validation feedback before 
+                or after submitting the form. The input fields will have a green (valid) or red (invalid) border to indicate 
+                what's missing in the form. You can also add a .valid-feedback or .invalid-feedback message to tell the user 
+                explicitly what's missing, or needs to be done before submitting the form.
+             -->
+            <form action="" class="needs-validation">
+                <div class="form-group">
+                    <label for="email">Emali:</label>
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                    <!-- <div class="valid-feedback">Valid</div> -->
+                    <div class="invalid-feedback">Eamil Required</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Password:</label>
+                    <input type="password" class="form-control" placeholder="Password" required>
+                    <div class="valid-feedback">Good</div>
+                    <div class="invalid-feedback">Password Required</div>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember" required> I agree on Terms and conditions.
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Check this checkbox to continue.</div>
+                    </label>
+                  </div>
+                  <button class="btn btn-danger" type="submit">Submit</button>
+                  <div class="text-danger">Try to fill the form or make a submit action</div>
+            </form>
+        </div>
+        <!-- Inputs -->
+        <!-- 
+            Bootstrap supports the following form controls: input textarea checkbox radio select
+            Bootstrap supports all the HTML5 input types: text, password, datetime, datetime-local, date, month,
+            time, week, number, email, url, search, tel, and color.
+            Note: Inputs will NOT be fully styled if their type is not properly declared!
+        -->
+        <!-- 
+            Change the size of the form control with .form-control-sm or .form-control-lg
+            Use the .form-control-plaintext if you want to style the input field as plain text
+        -->
+        <div class="container">
+            <h3 class="display-4 text-center">Inputs</h3>
+            <div class="form-group">
+                <label for="">Name</label>
+                <input type="text" class="form-control" placeholder="Enter Name">
+            </div>
+            <!-- text areas -->
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <!-- check Boxses -->
+            <!-- 
+                HOW:
+                Use a wrapper element with class="form-check" to ensure proper margins for labels and checkboxes.
+                Add the .form-check-label class to label elements, and .form-check-input to style checkboxes properly inside the .form-check container.
+                Use the .form-check-inline class if you want the checkboxes to appear on the same line
+            -->
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Good
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="">Better
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" value="" disabled>Best <!-- disabled added -->
+                </label>
+              </div>
+              <!-- Radio Buttons  -->
+              <!-- 
+                    Limited to one option
+                    As with checkboxes, use the .form-check-inline class if you want the radio buttons to appear on the same line
+                -->
+               <div class="form-check-inline ml-sm-5">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio">Option 1
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio">Option 2
+                </label>
+              </div>
+              <div class="form-check-inline disabled"> <!-- option disabled-->
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio" disabled>Option 3
+                </label>
+              </div>
+              <!-- Select List -->
+              <div class="form-group my-3">
+                <label for="sel1">Select list:</label>
+                <select class="form-control" id="sel1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <!-- 
+                  Add the .form-control-range class to input type"range" or .form-control-file to input type"file"
+                  to style a range control or a file field with full-width
+               -->
+              <input type="range" class="form-control-range">
+              <input type="file" class="form-control-file border">
+              <!-- Input Groups -->
+              <!-- 
+                The .input-group class is a container to enhance an input by adding an icon, text or a button in 
+                front or behind the input field as a "help text".
+                Use .input-group-prepend to add the help text in front of the input, and .input-group-append to add it behind the input.
+                At last, add the .input-group-text class to style the specified help text.
+
+                Use the .input-group-sm class for small input groups and .input-group-lg for large inputs groups
+
+                You can also use checkboxes or radio buttons instead of text make sure it is placed in the div with
+                the class of .input-group-text
+                Most times You might not want to use an help text a button, it is possible to use a button just make 
+                sure its inside the .input-group-prepend or .input-group-append div
+               -->
+               <!-- 
+                You can add a dropdown button in the input group. Note that you don't need the .dropdown wrapper, as you normally would.
+                Put labels outside of the input group, and remember that the value of the for attribute should match the id of the input.
+                If you click on the label it will bring focus to the input
+                -->
+               <h4 class="text-center text-primary">Input Groups</h4>
+               <form class="my-3">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username">
+                </div>
+              
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Your Email">
+                  <div class="input-group-append">
+                    <span class="input-group-text">@example.com</span>
+                  </div>
+                </div>
+              </form>
+              <!-- Multiple inputs -->
+                <form>
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Person</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="First Name">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                </form>
+                <!-- Multiple addons / help text -->
+                <form>
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">One</span>
+                        <span class="input-group-text">Two</span>
+                        <span class="input-group-text">Three</span>
+                    </div>
+                    <input type="text" class="form-control">
+                    </div>
+                </form>
+        </div>
+        <!-- Custom Forms -->
+        <!-- 
+            Custom CheckBox
+            To create a custom checkbox, wrap a container element, like <div>, with a class of .custom-control and 
+            .custom-checkbox around the checkbox. Then add the .custom-control-input to the input with type="checkbox".
+            Tip: If you use labels for accompanying text, add the .custom-control-label class to it. Note that the value 
+            of the for attribute should match the id of the checkbox
+
+            If you want the custom form controls to sit side by side (inline), add the .custom-control-inline to the wrapper/container
+
+            To create a custom select menu, add the .custom-select class to the <select> element
+            Use the .custom-select-sm class to create a small select menu and the .custom-select-lg class for a large one
+         -->
+        <div class="container">
+            <h3 class="display-4 text-center">Custom Forms</h3>
+            <form>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                  <label class="custom-control-label" for="customCheck">Check this custom checkbox</label>
+                </div>
+            </form>
+            <!-- Custom Switch -->
+            <!-- 
+                To create a custom "toggle switch", wrap a container element, like <div>, with a class of .custom-control and 
+                .custom-switch around a checkbox. Then add the .custom-control-input class to the checkbox
+            -->
+            <form>
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="switch1">
+                  <label class="custom-control-label" for="switch1">Toggle me</label>
+                </div>
+            </form>
+            <!-- 
+                Custom Radio buttons
+            To create a custom radio button, wrap a container element, like <div>, with a class of .custom-control 
+            and .custom-radio around the radio button. Then add the .custom-control-input to the input with type="radio".
+            Tip: If you use labels for accompanying text, add the .custom-control-label class to it. 
+            Note that the value of the for attribute should match the id of the radio:
+             -->
+            <form>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="customRadio" name="example1" value="customEx">
+                    <label class="custom-control-label" for="customRadio">Custom radio</label>
+                </div>
+            </form>
+            <!-- 
+                    Custom Range
+                To create a custom range menu, add the .custom-range class to an input with type="<range>"
+             -->
+            <form>
+                <label for="customRange">Custom range</label>
+                <input type="range" class="custom-range" id="customRange" name="points1">
+            </form>
+            <!-- 
+                    Custom File Upload
+                To create a custom file upload, wrap a container element with a class of .custom-file around the input with type="file". 
+                Then add the .custom-file-input to it.
+                Tip: If you use labels for accompanying text, add the .custom-file-label class to it. 
+                Note that the value of the for attribute should match the id of the checkbox
+
+                Note that you also have to include some jQuery code if you want the name of the file to appear when you select a specific file
+             -->
+            <form>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+            </form>
+        </div>
+        <!-- Carousels -->
+        <!-- 
+            Class	                    Description
+        .carousel	                Creates a carousel
+        .carousel-indicators	    Adds indicators for the carousel. These are the little dots at the bottom of each slide 
+                                    (which indicates how many slides there are in the carousel, and which slide the user are currently viewing)
+        .carousel-inner	            Adds slides to the carousel
+        .carousel-item	            Specifies the content of each slide
+        .carousel-control-prev	        Adds a left (previous) button to the carousel, which allows the user to go back between the slides
+        .carousel-control-next	    Adds a right (next) button to the carousel, which allows the user to go forward between the slides
+        .carousel-control-prev-icon	Used together with .carousel-control-prev to create a "previous" button
+        .carousel-control-next-icon	Used together with .carousel-control-next to create a "next" button
+        .slide	                    Adds a CSS transition and animation effect when sliding from one item to the next. 
+                                    Remove this class if you do not want this effect
+         -->
+         <!-- 
+             Add elements inside <div class="carousel-caption"> within each <div class="carousel-item"> to create a caption for each slide
+          -->
+        <div class="container-fluid">
+            <h3 class="text-center display-4">Carousels</h3>
+            <div id="dem" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#dem" data-slide-to="0" class="active"></li>
+                    <li data-target="#dem" data-slide-to="1"></li>
+                    <li data-target="#dem" data-slide-to="2"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/1300x300" alt="Imgage">
+                        <div class="carousel-caption">
+                            <h3>Beautiful Slide</h3>
+                            <Button class="btn btn-primary">Learn More</Button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1300x300" alt="Imgage">
+                        <div class="carousel-caption">
+                            <h3>Take a peak sneak Into the future</h3>
+                            <Button class="btn btn-danger">Lets GO!</Button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/1300x300" alt="Imgage">
+                        <div class="carousel-caption">
+                            <h3>Whats Happening</h3>
+                            <Button class="btn btn-warning">Learn More</Button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#dem" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#dem" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+        </div>
+        <!-- Modal -->
+        <!-- 
+            The Modal component is a dialog box/popup window that is displayed on top of the current page
+            Use the .fade class to add a fading effect when opening and closing the modal
+            Change the size of the modal by adding the .modal-sm class for small modals, .modal-lg class for large modals,
+            or .modal-xl for extra large modals.
+            Add the size class to the <div> element with class .modal-dialog
+            Center the modal vertically and horizontally within the page, with the .modal-dialog-centered class
+
+            if the content or information in your modal is much and the browser automatically adds a scrollbar you
+            can overwrite the scrollbar style  by adding .modal-dialog-scrollable to .modal-dialog 
+         -->
+        <div class="container">
+            <h3 class="display-4 text-center">Modal</h3>
+        <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Open modal
+            </button>
+        <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            Modal body..
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tool Tips -->
+        <!-- 
+            To create a tooltip, add the data-toggle="tooltip" attribute to an element.
+            Use the title attribute to specify the text that should be displayed inside the tooltip
+            Note: Tooltips must be initialized with jQuery: select the specified element and call the tooltip() method
+            below is a script to show all tooltip that will be specified
+            
+            Positioning tool tip:
+            Use the data-placement attribute to set the position of the tooltip on top, bottom, left or the right side of the element
+         -->
+        <div class="container">
+            <h3 class="display-4 text-center">Tool Tip</h3>
+            <a href="#" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="A ToolTip">Hover to see tooltip</a>
+        </div>
+        <!-- Pop Over -->
+        <!-- 
+            The Popover component is similar to tooltips; it is a pop-up box that appears when the user clicks on an element. 
+            The difference is that the popover can contain much more content.
+
+            To create a popover, add the data-toggle="popover" attribute to an element.
+            Use the title attribute to specify the header text of the popover, and use the data-content 
+            attribute to specify the text that should be displayed inside the popover's body
+
+            Note: Just like tool tip Popovers must be initialized with jQuery, select the specified element and call the popover() method.
+
+            By default, the popover will appear on the right side of the element.
+            Use the data-placement attribute to set the position of the popover on top, bottom, left or the right side of the element
+         -->
+         <!-- 
+            Note: The placement attributes do not work as you expect if it is not enough room for them. 
+            For example if you use the top placement at the top of a page (where it is no room for it), 
+            it will instead display the popover below the element or to the right (wherever it is room for it).
+
+            By default, the popover is closed when you click on the element again. However, you can use the data-trigger="focus" attribute which will close the popover when clicking outside the element
+
+            Tip: If you want the popover to be displayed when you move the mouse pointer over the element, 
+            use the data-trigger attribute with a value of "hover"
+          -->
+        <div class="container">
+            <h3 class="display-4 text-center">Pop Over</h3>
+            <a href="#id" id="id" class="btn btn-warning" data-toggle="popover" data-trigger="hover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+        </div>
+        <!-- Toast -->
+        <!-- 
+            The toast component is like an alert box that is only shown for a couple of seconds when something happens 
+            (i.e. when the user clicks on a button, submits a form, etc.).
+            To create a toast, use the .toast class, and add a .toast-header and a .toast-body inside of it
+         -->
+         <!-- 
+            Toasts are hidden by default. Use the data-autohide="false" attribute to show it by default. 
+            To close it, use a <button> element and add data-dismiss="toast":
+          -->
+        <div class="container">
+            <h3 class="display-4 text-center">Toast</h3>
+            <div class="toast">
+                <div class="toast-header">
+                  Toast Header
+                </div>
+                <div class="toast-body">
+                  Some text inside the toast body
+                </div>
+            </div>
+            <!--  -->
+            <div class="toast" data-autohide="false">
+                <div class="toast-header">
+                  <strong class="mr-auto text-primary">Toast Header</strong>
+                  <small class="text-muted">5 mins ago</small>
+                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                </div>
+                <div class="toast-body">
+                  Some text inside the toast body
+                </div>
+            </div>
+        </div>
+        <!-- Scrollspy -->
+        <div class="container">
+            <h3 class="text-center display-4">Scrollspy</h3>
+            <p>The Scrollspy is coming soon</p>
+        </div>
+        <!-- Utilities -->
+        <!-- 
+            BORDERS
+            Use the border classes to add or remove borders from an element
+            helper classes: .border, .border-0, .border-top-0,.border-bottom-0, .border-right-0, .border-left-0
+
+            Add a color to the border with any of the contextual border color classes
+            helper classes: .border-success, .border-info, .border-primary, .border-secondary, .border-danger,
+            .border-warning, .border-light, .border-dark, .border-white
+
+            Add rounded corners to an element with the rounded classes
+            helper classe: .rounded, .rounded-sm, .rounded-lg, .rounded-top, .rounded-right, .rounded-bottom, 
+            .rounded-left, .rounded-circle, .rounded-0
+         -->
+         <!-- 
+            FLOATS
+            Float an element to the right with the .float-right class or to the left with .float-left,
+            and clear floats with the .clearfix class
+
+            Float an element to the left or to the right depending on screen width, with the responsive float classes 
+            (.float-*-left|right) - where * is sm (>=576px), md (>=768px), lg (>=992px) or xl (>=1200px)
+          -->
+          <!-- 
+                    MISC
+            WIDTH
+            Center an element with the .mx-auto class (adds margin-left and margin-right: auto)
+            Set the width of an element with the w-* classes (.w-25, .w-50, .w-75, .w-100, .mw-100)
+            w = widht       mw= max-width
+
+            HEIGHT
+            Set the height of an element with the h-* classes (.h-25, .h-50, .h-75, .h-100, .mh-100)
+            h = height      mh = max-height
+
+            SHADOW
+            Use the shadow- classes to add shadows to an element
+            helper classes: .shadow.sm, .shadow, .shadow.lg
+
+            VERTICAL ALIGN
+            Use the align- classes to change the alignment of elements (only works on inline, inline-block, inline-table and table cell elements)
+            helper clasese: .align-baseline, .align-top, .align-bottom, .align-middle, .align-text-top, .align-text-bottom
+
+            VISIBILITY
+            Use the .visible or .invisible classes to control the visibility of elements. 
+            Note: These classes do not change the CSS display value. They only add visibility:visible or visibility:hidden
+
+            POSITION
+            Use the .fixed-top class to make any element fixed/stay at the top of the page
+            Use the .fixed-bottom class to make any element fixed/stay at the bottom of the page
+            Use the .sticky-top class to make any element fixed/stay at the top of the page when you scroll past it. 
+            Note: This class does not work in IE11 and earlier (will treat it as position:relative).
+            mostly used on navbars
+
+            CLOSE
+            Use the .close class to style a close icon. This is often used for alerts and modals. 
+            Note that we use the &times; symbol to create the actual icon (a better looking "x"). 
+            Also note that it floats right by default
+
+            SCREEN READERS
+            Use the .sr-only class to hide an element on all devices, except screen readers:
+           -->
+           <!-- 
+               SPACING
+               m - sets margin      p - sets padding
+               t - margin or padding top        b - margin or padding bottom
+               l - margin or padding left       r - margin or padding right
+               x - sets both top and bottom used for both margin and padding
+               y - sets both left and right used for both margin and padding
+
+               Where size is one of:
+                0 - sets margin or padding to 0
+                1 - sets margin or padding to .25rem (4px if font-size is 16px)
+                2 - sets margin or padding to .5rem (8px if font-size is 16px)
+                3 - sets margin or padding to 1rem (16px if font-size is 16px)
+                4 - sets margin or padding to 1.5rem (24px if font-size is 16px)
+                5 - sets margin or padding to 3rem (48px if font-size is 16px)
+                auto - sets margin to auto
+
+                Note: margins can also be negative, by adding an "n" in front of size:
+                n1 - sets margin to -.25rem (-4px if font-size is 16px)
+                n2 - sets margin to -.5rem (-8px if font-size is 16px)
+                n3 - sets margin to -1rem (-16px if font-size is 16px)
+                n4 - sets margin to -1.5rem (-24px if font-size is 16px)
+                n5 - sets margin to -3rem (-48px if font-size is 16px)
+            -->
+            <!-- 
+                COLORS
+                The classes for text colors are: .text-muted, .text-primary, .text-success, .text-info, 
+                .text-warning, .text-danger, .text-secondary, .text-white, .text-dark, .text-body 
+                (default body color/often black) and .text-light
+                Contextual text classes can also be used on links, which will add a darker hover color
+                You can also add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes
+            -->
+             <!-- 
+                BACKGROUND COLORS
+                The classes for background colors are: .bg-primary, .bg-success, .bg-info, .bg-warning, 
+                .bg-danger, .bg-secondary, .bg-dark and .bg-light.
+                Note that background colors do not set the text color, so in some cases you'll want to use them together with a .text-* class.
+            -->
+            <!-- 
+                BLOCK ELEMENT
+                To make an element into a block element, add the .d-block class. Use any of the d-*-block classes 
+                to control WHEN the element should be a block element on a specific screen width eg: sm , lg, md 
+            -->
+            <!--  -->
+            <!-- Flex Utitlity -->
+            <!-- 
+                To create a flexbox container and to transform direct children into flex items, use the d-flex class
+                To create an inline flexbox container, use the d-inline-flex class
+
+                HORIZONTAL DIRECTION
+                Use .flex-row to display the flex items horizontally (side by side). This is default.
+                Tip: Use .flex-row-reverse to right-align the horizontal direction
+
+                VERTICAL DIRECTION
+                Use .flex-column to display the flex items vertically (on top of each other), 
+                or .flex-column-reverse to reverse the vertical direction
+
+                JUSTIFY CONTENET
+                Use the .justify-content-* classes to change the alignment of flex items. Valid classes are start (default), end, center, between or around
+
+                Use .flex-fill on flex items to force them into equal widths 
+                Use .flex-grow-1 on a flex item to take up the rest of the space. 
+                Change the visual order of a specific flex item(s) with the .order classes. Valid classes are from 0 to 12, where the lowest number has highest priority (order-1 is shown before order-2, etc..)
+                Easily add auto margins to flex items with .mr-auto (push items to the right), or by using .ml-auto (push items to the left)
+                Control how flex items wrap in a flex container with .flex-nowrap (default), .flex-wrap or .flex-wrap-reverse.
+             -->
+             <!-- 
+                ALIGN CONTENT
+                Control the vertical alignment of gathered flex items with the .align-content-* classes. 
+                Valid classes are .align-content-start (default), .align-content-end, .align-content-center, 
+                .align-content-between, .align-content-around and .align-content-stretch.
+                Note: These classes have no effect on single rows of flex items.
+
+                ALIGN ITEMS
+                Control the vertical alignment of single rows of flex items with the .align-items-* classes. 
+                Valid classes are .align-items-start, .align-items-end, .align-items-center, .align-items-baseline, 
+                and .align-items-stretch (default).
+
+                ALIGN SELF
+                Control the vertical alignment of a specified flex item with the .align-self-* classes. 
+                Valid classes are .align-self-start, .align-self-end, .align-self-center, .align-self-baseline, 
+                and .align-self-stretch (default).
+              -->
+              <!-- Media Object -->
+              <!-- 
+                  Bootstrap provides an easy way to align media objects (like images or videos) together with content. 
+                  Media objects are often used to display blog comments, tweets and so on
+
+                  To create a media object, add the .media class to a container element, and place media content inside a 
+                  child container with the .media-body class. Add padding and margins as needed, with the spacing utilities
+
+                  To nest media objects, place a new .media container inside the .media-body container
+                  To right-align the media image, add the image after the .media-body container
+                  Use the flex utilities, .align-self-* classes to place the media object on the top, middle or at the bottom
+                -->
+        <div class="container">
+            <h3 class="display-4 text-center">Media Object</h3>
+            <div class="media border p-3">
+                <img src="https://via.placeholder.com/300x300" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                <div class="media-body">
+                  <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo labore, excepturi veniam dicta neque quo expedita ducimus reiciendis omnis debitis?</p>
+                  <div class="media p-3">
+                    <img src="https://via.placeholder.com/300x300" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+                    <div class="media-body">
+                      <h4>Jane Doe <small><i>Posted on February 20 2016</i></small></h4>
+                      <p>Lorem ipsum aiduychb akjioliisb hhssis</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<div style="height: 40vh"></div><!-- gives extra space at the bottom-->
+<script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script><!-- link to the bootstrap 4 javascript offline file-->
+<!--
+    the script below is for custom file input
+    so that when a file is chosen it shows up in the input box
+-->
+<script>
+    // Add the following code if you want the name of the file to appear in th e input box
+    $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+</script> <!--ENDs HERE-->
+
+<!-- 
+    script to activate the tool tip for all tool tips
+ -->
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+</script> <!--ENDs HERE-->
+
+<!-- 
+    Script to activate popover for all popover that will be specified
+ -->
+ <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+</script> <!--ENDs HERE-->
+
+<!-- 
+    Script to activate toast function
+ -->
+ <script>
+    $(document).ready(function(){
+      $('.toast').toast('show');
+    });
+</script> <!--ENDs HERE-->
+
+<!--
+    use this script below in the case of which you used the class .needs-validation for a form
+    and you want to also add the class of .was-validated on submit of the form when due input or
+    checks have not been completed
+-->
+<!-- <script>
+    // Disable form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script> -->
+</body>
+</html>
